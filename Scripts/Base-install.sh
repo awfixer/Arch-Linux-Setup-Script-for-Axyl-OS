@@ -48,7 +48,7 @@ arch-chroot /mnt locale-gen
 
 arch-chroot /mnt useradd -G wheel -m judge
 
-arch-chroot /mnt passwd walian
+arch-chroot /mnt passwd judge
 
 sed -i -e '/^# %wheel ALL=(ALL:ALL) NOPASSWD: ALL/s/^# //' /mnt/etc/sudoers
 
